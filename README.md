@@ -1,4 +1,4 @@
-# **Nim Game**
+# **Triangle Calculator**
 
 ## Background Info
 ---
