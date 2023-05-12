@@ -5,7 +5,6 @@ public class triangles {
     static int b;
     static int c;
     static String userEntry; 
-    static String[] numbers;
 
     public static void main(String[] args) {
 
@@ -27,6 +26,7 @@ public class triangles {
         }
     }
 
+    //determines the triangle 
     public static void determineTriangleType() {
 
         //triangle type String
