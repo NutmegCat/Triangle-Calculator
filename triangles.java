@@ -10,30 +10,21 @@ public class triangles {
     public static void main(String[] args) {
 
         //user input
-        System.out.println("What is your a, b, and c (include spaces, no commas [a b c])");
-        userEntry = In.getString();
+        System.out.println("Provide three side lenghts - 0 0 0 to terminate");
+        System.out.println("What is your a value?");
+        a = In.getInt();
 
-        splitString();
+        System.out.println("What is your b value?");
+        b = In.getInt();
+
+        System.out.println("What is your c value?");
+        c = In.getInt();
 
         if (a == 0 && b == 0 && c == 0) {
             System.out.println("\nProgram Terminated\n");
         } else {
             determineTriangleType();
         }
-    }
-
-    public static void splitString() {  // --> used to convert string input into an int array
-        
-        //split the inputs (a b c --> int a, int b, int c)
-        numbers = userEntry.split(" ");
-        
-        //int vars for a b c 
-        a = Integer.parseInt(numbers[0]);
-        b = Integer.parseInt(numbers[1]);
-        c = Integer.parseInt(numbers[2]);
-        
-        //output side lengths
-        System.out.println("\nYour side lengths are: " + a + " " + b + " " + c);
     }
 
     public static void determineTriangleType() {
