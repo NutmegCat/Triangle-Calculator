@@ -9,14 +9,13 @@ public class triangles {
     public static void main(String[] args) {
 
         //user input
-        System.out.println("Provide three side lenghts - 0 0 0 to terminate");
-        System.out.println("What is your a value?");
+        System.out.println("Provide three side lenghts - 0 0 0 to terminate\nWhat is your a value?");
         a = In.getInt();
 
         System.out.println("What is your b value?");
         b = In.getInt();
 
-        System.out.println("What is your c value?");
+        System.out.println("What is your c value or your biggest side?");
         c = In.getInt();
 
         if (a == 0 && b == 0 && c == 0) {
@@ -84,7 +83,6 @@ public class triangles {
 
         //final output
         System.out.println("\nThe triangle is: " + triangleType + triangleAngle + "\n");
-        //System.out.println("Adder is: " + adder);
         }
     }   
 }
